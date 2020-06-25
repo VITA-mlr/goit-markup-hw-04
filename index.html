@@ -14,6 +14,12 @@
   </head>
 
   <body>
+    <!-- <ul>
+      <li class="div"><div>s</div></li>
+      <li class="div"><div>s</div></li>
+      <li class="div"><div>s</div></li>
+    </ul> -->
+
     <header class="header-section">
       <nav class="container nav-flex">
         <!-- Logotype of site -->
@@ -26,13 +32,13 @@
         </ul>
         <!-- Kontakts -->
         <ul class="nav-list-contacts">
-          <li>
-            <a class="nav-link icon-address" href="mailto:info@devstudio.com">
+          <li class="icon-address">
+            <a class="nav-link" href="mailto:info@devstudio.com">
               info@devstudio.com
             </a>
           </li>
-          <li>
-            <a class="nav-link icon-address" href="tel:+380961111111">
+          <li class="icon-address">
+            <a class="nav-link" href="tel:+380961111111">
               +38 096 111 11 11
             </a>
           </li>
@@ -43,7 +49,9 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero-title">
+            Эффективные решения<br />для вашего бизнеса
+          </h1>
           <a href="" class="button">Заказать услугу</a>
         </div>
       </section>
@@ -52,6 +60,7 @@
       <section>
         <div class="container">
           <h2 class="sectoin-title visually-hidden">Особенности</h2>
+
           <ul class="feature-flex">
             <li class="icon-features">
               <h3 class="features-item-header">Внимание к деталям</h3>
@@ -60,36 +69,24 @@
                 формированию позиции.
               </p>
             </li>
-            <li>
-              <!--<div width="270">-->
-              <div class="img-feature">
-                <img src="images/clock_1.svg" alt="Иконка" width="70" />
-              </div>
 
+            <li class="icon-features">
               <h3 class="features-item-header">Пунктуальность</h3>
               <p class="features-item-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
-              <!--<div width="270">-->
-              <div class="img-feature">
-                <img src="images/diagram_1.svg" alt="Иконка" width="70" />
-              </div>
 
+            <li class="icon-features">
               <h3 class="features-item-header">Планирование</h3>
               <p class="features-item-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
-              <!--<div width="270">-->
-              <div class="img-feature">
-                <img src="images/astronaut_1.svg" alt="Иконка" width="70" />
-              </div>
 
+            <li class="icon-features">
               <h3 class="features-item-header">Современные технологии</h3>
               <p class="features-item-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -169,7 +166,7 @@
                 alt="Фото сотрудника"
                 width="270"
               />
-              <div class="card-description">
+              <div class="card-shadow">
                 <h3 class="team-header">Николай Кучеренко</h3>
                 <p class="team-profetion">Product Designer</p>
 
@@ -217,44 +214,45 @@
                   alt="Фото сотрудника"
                   width="270"
                 />
+                <div class="card-shadow">
+                  <h3 class="team-header">Ольга Иванова</h3>
+                  <p class="team-profetion">Frontend Developer</p>
 
-                <h3 class="team-header">Ольга Иванова</h3>
-                <p class="team-profetion">Frontend Developer</p>
-
-                <ul class="messengers-flex">
-                  <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Instagram"
-                      >Instagram</a
-                    >
-                  </li>
-                  <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Twitter"
-                      >Twitter</a
-                    >
-                  </li>
-                  <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Facebook"
-                      >Facebook</a
-                    >
-                  </li>
-                  <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Linkedin"
-                      >Linkedin</a
-                    >
-                  </li>
-                </ul>
+                  <ul class="messengers-flex">
+                    <li class="messenger-item">
+                      <a
+                        class="visually-hidden"
+                        href=""
+                        aria-label="Ссылка на Instagram"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li class="messenger-item">
+                      <a
+                        class="visually-hidden"
+                        href=""
+                        aria-label="Ссылка на Twitter"
+                        >Twitter</a
+                      >
+                    </li>
+                    <li class="messenger-item">
+                      <a
+                        class="visually-hidden"
+                        href=""
+                        aria-label="Ссылка на Facebook"
+                        >Facebook</a
+                      >
+                    </li>
+                    <li class="messenger-item">
+                      <a
+                        class="visually-hidden"
+                        href=""
+                        aria-label="Ссылка на Linkedin"
+                        >Linkedin</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="team-item">
@@ -265,44 +263,45 @@
                   alt="Фото сотрудника"
                   width="270"
                 />
+                <div class="card-shadow">
+                  <h3 class="team-header">Андрей Шевченко</h3>
+                  <p class="team-profetion">Marketing</p>
 
-                <h3 class="team-header">Андрей Шевченко</h3>
-                <p class="team-profetion">Marketing</p>
-
-                <ul class="messengers-flex">
-                  <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Instagram"
-                      >Instagram</a
-                    >
-                  </li>
-                  <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Twitter"
-                      >Twitter</a
-                    >
-                  </li>
-                  <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Facebook"
-                      >Facebook</a
-                    >
-                  </li>
-                  <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Linkedin"
-                      >Linkedin</a
-                    >
-                  </li>
-                </ul>
+                  <ul class="messengers-flex">
+                    <li class="messenger-item">
+                      <a
+                        class="visually-hidden"
+                        href=""
+                        aria-label="Ссылка на Instagram"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li class="messenger-item">
+                      <a
+                        class="visually-hidden"
+                        href=""
+                        aria-label="Ссылка на Twitter"
+                        >Twitter</a
+                      >
+                    </li>
+                    <li class="messenger-item">
+                      <a
+                        class="visually-hidden"
+                        href=""
+                        aria-label="Ссылка на Facebook"
+                        >Facebook</a
+                      >
+                    </li>
+                    <li class="messenger-item">
+                      <a
+                        class="visually-hidden"
+                        href=""
+                        aria-label="Ссылка на Linkedin"
+                        >Linkedin</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="team-item">
@@ -314,43 +313,45 @@
                   width="270"
                 />
 
-                <h3 class="team-header">Иван Николаев</h3>
-                <p class="team-profetion">UI Designer</p>
+                <div class="card-shadow">
+                  <h3 class="team-header">Иван Николаев</h3>
+                  <p class="team-profetion">UI Designer</p>
 
-                <ul class="messengers-flex">
-                  <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Instagram"
-                      >Instagram</a
-                    >
-                  </li>
-                  <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Twitter"
-                      >Twitter</a
-                    >
-                  </li>
-                  <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Facebook"
-                      >Facebook</a
-                    >
-                  </li>
-                  <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Linkedin"
-                      >Linkedin</a
-                    >
-                  </li>
-                </ul>
+                  <ul class="messengers-flex">
+                    <li class="messenger-item">
+                      <a
+                        class="visually-hidden"
+                        href=""
+                        aria-label="Ссылка на Instagram"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li class="messenger-item">
+                      <a
+                        class="visually-hidden"
+                        href=""
+                        aria-label="Ссылка на Twitter"
+                        >Twitter</a
+                      >
+                    </li>
+                    <li class="messenger-item">
+                      <a
+                        class="visually-hidden"
+                        href=""
+                        aria-label="Ссылка на Facebook"
+                        >Facebook</a
+                      >
+                    </li>
+                    <li class="messenger-item">
+                      <a
+                        class="visually-hidden"
+                        href=""
+                        aria-label="Ссылка на Linkedin"
+                        >Linkedin</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
           </ul>

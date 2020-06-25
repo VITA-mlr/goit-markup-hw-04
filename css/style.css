@@ -297,8 +297,24 @@ p {
 /* ------------ index.html --------------- */
 /* Hero section */
 .hero {
-  background-color: var(--text-color);
+  height: 600px;
+  width: 1600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+}
+
+.hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -338,9 +354,24 @@ p {
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
-  background-image: url(../images/antenna_1.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.icon-features:nth-child(1)::before {
+  background-image: url(../images/antenna_1.svg);
+}
+
+.icon-features:nth-child(2)::before {
+  background-image: url(../images/clock_1.svg);
+}
+
+.icon-features:nth-child(3)::before {
+  background-image: url(../images/diagram_1.svg);
+}
+
+.icon-features:nth-child(4)::before {
+  background-image: url(../images/astronaut_1.svg);
 }
 
 .features-item-header {
@@ -414,37 +445,15 @@ p {
   padding-bottom: 94px;
 }
 
-/* .messengers-flex {
-  max-width: 206px;
-} */
-
-.messengers-flex {
-  display: flex;
-  width: 206px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.messenger-item {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  outline: 2px solid tomato;
-}
-
-.messenger-item:nth-child(1) {
-  background-image: url(../images/instagram-1.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  outline: 0;
-}
-
-.messenger-item:not(:last-child) {
-  margin-right: 10px;
+.card-shadow {
+  background: var(--hero-button-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-header {
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -465,6 +474,32 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+.messengers-flex {
+  display: flex;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 24px;
+}
+
+.messenger-item {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  outline: 2px solid tomato;
+}
+
+.messenger-item:nth-child(1) {
+  background-image: url(../images/instagram-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  outline: 0;
+}
+
+.messenger-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Section - regular customers  */
@@ -540,6 +575,21 @@ p {
   margin-bottom: 30px;
 }
 
+.card-description {
+  background: var(--hero-button-color);
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.card-linc {
+  display: block;
+}
+
 .text {
   font-size: 18px;
   line-height: 28px;
@@ -565,25 +615,6 @@ p {
   color: var(--text-color);
 }
 
-/* .card {
-  width: 370px;
-} */
-
-.card-descriptio {
-  background: var(--hero-button-color);
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.card-linc {
-  display: block;
-}
-
 .visually-hidden {
   position: absolute;
   border: 0;
@@ -593,3 +624,23 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* .div {
+  margin: 30px;
+  width: 300px;
+}
+
+.div:nth-child(1) {
+  outline: 2px solid red;
+  background: grey;
+}
+
+.div:nth-child(2) {
+  outline: 2px solid grey;
+  background: yellow;
+}
+
+.div:nth-child(3) {
+  outline: 2px solid green;
+  background: blue;
+} */
