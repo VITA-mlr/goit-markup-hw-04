@@ -14,12 +14,6 @@
   </head>
 
   <body>
-    <!-- <ul>
-      <li class="div"><div>s</div></li>
-      <li class="div"><div>s</div></li>
-      <li class="div"><div>s</div></li>
-    </ul> -->
-
     <header class="header-section">
       <nav class="container nav-flex">
         <!-- Logotype of site -->
@@ -34,11 +28,17 @@
         <ul class="nav-list-contacts">
           <li class="icon-address">
             <a class="nav-link" href="mailto:info@devstudio.com">
+              <svg class="icon" width="16" height="11">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="icon-address">
             <a class="nav-link" href="tel:+380961111111">
+              <svg class="icon" width="10" height="15">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
               +38 096 111 11 11
             </a>
           </li>
@@ -62,7 +62,12 @@
           <h2 class="sectoin-title visually-hidden">Особенности</h2>
 
           <ul class="feature-flex">
-            <li class="icon-features">
+            <li>
+              <div class="icon-features" aria-label="Картинка">
+                <svg class="icon-position">
+                  <use href="./images/sprite.svg#icon-antenna_1"></use>
+                </svg>
+              </div>
               <h3 class="features-item-header">Внимание к деталям</h3>
               <p class="features-item-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -70,7 +75,12 @@
               </p>
             </li>
 
-            <li class="icon-features">
+            <li>
+              <div class="icon-features" aria-label="Картинка">
+                <svg class="icon-position">
+                  <use href="./images/sprite.svg#icon-clock_1"></use>
+                </svg>
+              </div>
               <h3 class="features-item-header">Пунктуальность</h3>
               <p class="features-item-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -78,7 +88,12 @@
               </p>
             </li>
 
-            <li class="icon-features">
+            <li>
+              <div class="icon-features" aria-label="Картинка">
+                <svg class="icon-position">
+                  <use href="./images/sprite.svg#icon-diagram_1"></use>
+                </svg>
+              </div>
               <h3 class="features-item-header">Планирование</h3>
               <p class="features-item-text">
                 Равным образом консультация с широким активом в значительной
@@ -86,7 +101,12 @@
               </p>
             </li>
 
-            <li class="icon-features">
+            <li>
+              <div class="icon-features" aria-label="Картинка">
+                <svg class="icon-position">
+                  <use href="./images/sprite.svg#icon-astronaut_1"></use>
+                </svg>
+              </div>
               <h3 class="features-item-header">Современные технологии</h3>
               <p class="features-item-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -172,87 +192,77 @@
 
                 <ul class="messengers-flex">
                   <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Instagram"
-                      >Instagram</a
-                    >
+                    <a href="" aria-label="Ссылка на Instagram">
+                      <svg class="icon">
+                        <use href="./images/sprite.svg#icon-instagram-1"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Twitter"
-                      >Twitter</a
-                    >
+                    <a href="" aria-label="Ссылка на Twitter">
+                      <svg class="icon">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Facebook"
-                      >Facebook</a
-                    >
+                    <a href="" aria-label="Ссылка на Facebook">
+                      <svg class="icon">
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="messenger-item">
-                    <a
-                      class="visually-hidden"
-                      href=""
-                      aria-label="Ссылка на Linkedin"
-                      >Linkedin</a
-                    >
+                    <a href="" aria-label="Ссылка на Linkedin">
+                      <svg class="icon">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="team-item">
-              <div>
-                <img
-                  class="imgblock"
-                  src="images/photo_stewart.jpg"
-                  alt="Фото сотрудника"
-                  width="270"
-                />
-                <div class="card-shadow">
-                  <h3 class="team-header">Ольга Иванова</h3>
-                  <p class="team-profetion">Frontend Developer</p>
+              <img
+                class="imgblock"
+                src="images/photo_stewart.jpg"
+                alt="Фото сотрудника"
+                width="270"
+              />
+              <div class="card-shadow">
+                <h3 class="team-header">Ольга Иванова</h3>
+                <p class="team-profetion">Frontend Developer</p>
 
-                  <ul class="messengers-flex">
-                    <li class="messenger-item">
-                      <a
-                        class="visually-hidden"
-                        href=""
-                        aria-label="Ссылка на Instagram"
-                        >Instagram</a
-                      >
-                    </li>
-                    <li class="messenger-item">
-                      <a
-                        class="visually-hidden"
-                        href=""
-                        aria-label="Ссылка на Twitter"
-                        >Twitter</a
-                      >
-                    </li>
-                    <li class="messenger-item">
-                      <a
-                        class="visually-hidden"
-                        href=""
-                        aria-label="Ссылка на Facebook"
-                        >Facebook</a
-                      >
-                    </li>
-                    <li class="messenger-item">
-                      <a
-                        class="visually-hidden"
-                        href=""
-                        aria-label="Ссылка на Linkedin"
-                        >Linkedin</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+                <ul class="messengers-flex">
+                  <li class="messenger-item">
+                    <a href="" aria-label="Ссылка на Instagram">
+                      <svg class="icon">
+                        <use href="./images/sprite.svg#icon-instagram-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="messenger-item">
+                    <a href="" aria-label="Ссылка на Twitter">
+                      <svg class="icon">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="messenger-item">
+                    <a href="" aria-label="Ссылка на Facebook">
+                      <svg class="icon">
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="messenger-item">
+                    <a href="" aria-label="Ссылка на Linkedin">
+                      <svg class="icon">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-item">
@@ -269,36 +279,34 @@
 
                   <ul class="messengers-flex">
                     <li class="messenger-item">
-                      <a
-                        class="visually-hidden"
-                        href=""
-                        aria-label="Ссылка на Instagram"
-                        >Instagram</a
-                      >
+                      <a href="" aria-label="Ссылка на Instagram">
+                        <svg class="icon">
+                          <use
+                            href="./images/sprite.svg#icon-instagram-1"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="messenger-item">
-                      <a
-                        class="visually-hidden"
-                        href=""
-                        aria-label="Ссылка на Twitter"
-                        >Twitter</a
-                      >
+                      <a href="" aria-label="Ссылка на Twitter">
+                        <svg class="icon">
+                          <use href="./images/sprite.svg#icon-twitter-1"></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="messenger-item">
-                      <a
-                        class="visually-hidden"
-                        href=""
-                        aria-label="Ссылка на Facebook"
-                        >Facebook</a
-                      >
+                      <a href="" aria-label="Ссылка на Facebook">
+                        <svg class="icon">
+                          <use href="./images/sprite.svg#icon-facebook-1"></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="messenger-item">
-                      <a
-                        class="visually-hidden"
-                        href=""
-                        aria-label="Ссылка на Linkedin"
-                        >Linkedin</a
-                      >
+                      <a href="" aria-label="Ссылка на Linkedin">
+                        <svg class="icon">
+                          <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                        </svg>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -319,36 +327,34 @@
 
                   <ul class="messengers-flex">
                     <li class="messenger-item">
-                      <a
-                        class="visually-hidden"
-                        href=""
-                        aria-label="Ссылка на Instagram"
-                        >Instagram</a
-                      >
+                      <a href="" aria-label="Ссылка на Instagram">
+                        <svg class="icon">
+                          <use
+                            href="./images/sprite.svg#icon-instagram-1"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="messenger-item">
-                      <a
-                        class="visually-hidden"
-                        href=""
-                        aria-label="Ссылка на Twitter"
-                        >Twitter</a
-                      >
+                      <a href="" aria-label="Ссылка на Twitter">
+                        <svg class="icon">
+                          <use href="./images/sprite.svg#icon-twitter-1"></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="messenger-item">
-                      <a
-                        class="visually-hidden"
-                        href=""
-                        aria-label="Ссылка на Facebook"
-                        >Facebook</a
-                      >
+                      <a href="" aria-label="Ссылка на Facebook">
+                        <svg class="icon">
+                          <use href="./images/sprite.svg#icon-facebook-1"></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="messenger-item">
-                      <a
-                        class="visually-hidden"
-                        href=""
-                        aria-label="Ссылка на Linkedin"
-                        >Linkedin</a
-                      >
+                      <a href="" aria-label="Ссылка на Linkedin">
+                        <svg class="icon">
+                          <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                        </svg>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -362,79 +368,78 @@
       <section>
         <div class="customers container">
           <h2 class="sectoin-title">Постоянные клиенты</h2>
-
           <ul class="customers-flex">
-            <li>
-              <div class="customers-block">
-                <a>
-                  <img
-                    class="imgblock"
-                    src="images/logo_1.svg"
-                    alt="Логотип"
-                    width="44"
-                  />
-                </a>
-              </div>
+            <li class="customers-block">
+              <a>
+                <svg
+                  class="icon"
+                  width="44"
+                  height="49"
+                  aria-label="Ссылка-логотип на компанию 1"
+                >
+                  <use href="./images/sprite.svg#icon-logo_1"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <div class="customers-block">
-                <a>
-                  <img
-                    class="imgblock"
-                    src="images/logo_2.svg"
-                    alt="Логотип"
-                    width="40"
-                  />
-                </a>
-              </div>
+            <li class="customers-block">
+              <a>
+                <svg
+                  class="icon"
+                  width="40"
+                  height="52"
+                  aria-label="Ссылка-логотип на компанию 2"
+                >
+                  <use href="./images/sprite.svg#icon-logo_2"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <div class="customers-block">
-                <a>
-                  <img
-                    class="imgblock"
-                    src="images/logo_3.svg"
-                    alt="Логотип"
-                    width="41"
-                  />
-                </a>
-              </div>
+            <li class="customers-block">
+              <a>
+                <svg
+                  class="icon"
+                  width="42"
+                  height="43"
+                  aria-label="Ссылка-логотип на компанию 3"
+                >
+                  <use href="./images/sprite.svg#icon-logo_3"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <div class="customers-block">
-                <a>
-                  <img
-                    class="imgblock"
-                    src="images/logo_4.svg"
-                    alt="Логотип"
-                    width="80"
-                  />
-                </a>
-              </div>
+            <li class="customers-block">
+              <a>
+                <svg
+                  class="icon"
+                  width="80"
+                  height="42"
+                  aria-label="Ссылка-логотип на компанию 4"
+                >
+                  <use href="./images/sprite.svg#icon-logo_4"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <div class="customers-block">
-                <a>
-                  <img
-                    class="imgblock"
-                    src="images/logo_5.svg"
-                    alt="Логотип"
-                    width="59"
-                  />
-                </a>
-              </div>
+            <li class="customers-block">
+              <a>
+                <svg
+                  class="icon"
+                  width="59"
+                  height="47"
+                  aria-label="Ссылка-логотип на компанию 5"
+                >
+                  <use href="./images/sprite.svg#icon-logo_5"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <div class="customers-block">
-                <a>
-                  <img
-                    class="imgblock"
-                    src="images/logo_6.svg"
-                    alt="Логотип"
-                    width="88"
-                  />
-                </a>
-              </div>
+            <li class="customers-block">
+              <a>
+                <svg
+                  class="icon"
+                  width="89"
+                  height="45"
+                  aria-label="Ссылка-логотип на компанию 6"
+                >
+                  <use href="./images/sprite.svg#icon-logo_6"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -446,19 +451,23 @@
         <div class="footer-flex">
           <!-- Contact Information -->
           <div>
-            <a href="" class="logo"
-              ><span class="logo-blue">Web</span> Studio</a
-            >
+            <a href="" class="logo">
+              <span class="logo-blue">Web</span> Studio
+            </a>
 
             <address class="footer-address">
               г. Киев, пр-т Леси Украинки, 26, <br />
 
               <span
-                ><a class="footer-contact" href="">info@example.com</a></span
+                ><a class="footer-contact" href="mailto:info@devstudio.com"
+                  >info@example.com</a
+                ></span
               >
               <br />
               <span
-                ><a class="footer-contact" href="">+38 099 111 11 11</a></span
+                ><a class="footer-contact" href="tel:+380961111111"
+                  >+38 099 111 11 11</a
+                ></span
               >
             </address>
           </div>
@@ -469,36 +478,32 @@
 
             <ul class="messengers-flex">
               <li class="messenger-item">
-                <a
-                  class="visually-hidden"
-                  href=""
-                  aria-label="Ссылка на Instagram"
-                  >Instagram</a
-                >
+                <a href="" aria-label="Ссылка на Instagram">
+                  <svg class="icon">
+                    <use href="./images/sprite.svg#icon-instagram-1"></use>
+                  </svg>
+                </a>
               </li>
               <li class="messenger-item">
-                <a
-                  class="visually-hidden"
-                  href=""
-                  aria-label="Ссылка на Twitter"
-                  >Twitter</a
-                >
+                <a href="" aria-label="Ссылка на Twitter">
+                  <svg class="icon">
+                    <use href="./images/sprite.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
               <li class="messenger-item">
-                <a
-                  class="visually-hidden"
-                  href=""
-                  aria-label="Ссылка на Twitter"
-                  >Facebook</a
-                >
+                <a href="" aria-label="Ссылка на Facebook">
+                  <svg class="icon">
+                    <use href="./images/sprite.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
               </li>
               <li class="messenger-item">
-                <a
-                  class="visually-hidden"
-                  href=""
-                  aria-label="Ссылка на Linkedin"
-                  >Linkedin</a
-                >
+                <a href="" aria-label="Ссылка на Linkedin">
+                  <svg class="icon">
+                    <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>

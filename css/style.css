@@ -93,6 +93,7 @@ p {
 .footer .logo {
   display: block;
   margin-top: 45px;
+  margin-bottom: 8px;
   color: var(--hero-button-color);
 }
 
@@ -143,6 +144,7 @@ p {
 /* Navigation in header */
 .header-section {
   background-color: var(--hero-button-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .container {
@@ -179,8 +181,8 @@ p {
 
 .nav-list-site .nav-link {
   display: block;
-  padding-top: 33px;
-  padding-bottom: 31px;
+  /* padding-top: 33px;
+  padding-bottom: 31px; */
 }
 
 .nav-list-site li:not(:last-child) {
@@ -189,7 +191,7 @@ p {
 
 .nav-list-contacts {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   margin-left: auto;
 
   font-weight: 500;
@@ -203,7 +205,20 @@ p {
   margin-left: 30px;
 }
 
-.icon-address::before {
+.icon-address {
+  display: inline-flex;
+  background-position: 0 center;
+}
+
+.nav-link {
+  fill: var(--text-color);
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+/* .icon-address::before {
   content: "";
   background-repeat: no-repeat;
 
@@ -222,11 +237,12 @@ p {
   width: 10px;
   height: 15px;
   background-image: url(../images/smartphone.svg);
-}
+} */
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--menu-active-color);
+  fill: var(--menu-active-color);
 }
 
 .nav-link.current {
@@ -241,10 +257,13 @@ p {
 .footer {
   background-color: var(--footer-backgraund);
 }
+.footer .container {
+  padding-top: 0;
+}
 
 .footer-flex {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   padding-bottom: 28px;
 }
 
@@ -255,6 +274,8 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--hero-button-color);
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -272,7 +293,9 @@ p {
 }
 
 .footer .messenger-item > a {
-  color: var(--footer-address-color);
+  fill: var(--hero-button-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 .form {
@@ -347,19 +370,27 @@ p {
   margin-bottom: 30px;
 }
 
-.icon-features::before {
+.icon-features {
   content: "";
   display: block;
   height: 120px;
+  width: 270px;
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
+.icon-position {
+  width: 70px;
+  height: 70px;
+}
+
+/* 
 .icon-features:nth-child(1)::before {
-  background-image: url(../images/antenna_1.svg);
+  background-image: url(../images/sprite.svg#icon-clock_1);
 }
 
 .icon-features:nth-child(2)::before {
@@ -372,7 +403,7 @@ p {
 
 .icon-features:nth-child(4)::before {
   background-image: url(../images/astronaut_1.svg);
-}
+} */
 
 .features-item-header {
   font-weight: 700;
@@ -484,18 +515,25 @@ p {
   padding-bottom: 24px;
 }
 
-.messenger-item {
-  display: inline-block;
+.messenger-item a {
+  display: block;
+  padding: 12px;
   width: 44px;
   height: 44px;
-  outline: 2px solid tomato;
+  fill: #afb1b8;
 }
 
-.messenger-item:nth-child(1) {
-  background-image: url(../images/instagram-1.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  outline: 0;
+.messenger-item a:hover,
+.messenger-item a:focus {
+  background-color: var(--menu-active-color);
+  border-radius: 50%;
+  fill: var(--hero-button-color);
+}
+
+.messenger-item .icon {
+  margin-right: 0;
+  width: 20px;
+  height: 20px;
 }
 
 .messenger-item:not(:last-child) {
@@ -504,8 +542,7 @@ p {
 
 /* Section - regular customers  */
 
-.customers.container,
-.footer .container {
+.customers.container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -518,11 +555,18 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #afb1b8;
 }
 
-.customers-block .imgblock {
-  margin: auto;
+.customers-block:hover,
+.customers-block:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
 }
+
+/* .customers-block .imgblock {
+  margin: auto;
+} */
 
 /* -------------- portfolio.html -------------- */
 
@@ -590,6 +634,12 @@ p {
   display: block;
 }
 
+.card-linc:hover,
+.card-linc:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 .text {
   font-size: 18px;
   line-height: 28px;
@@ -624,23 +674,3 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/* .div {
-  margin: 30px;
-  width: 300px;
-}
-
-.div:nth-child(1) {
-  outline: 2px solid red;
-  background: grey;
-}
-
-.div:nth-child(2) {
-  outline: 2px solid grey;
-  background: yellow;
-}
-
-.div:nth-child(3) {
-  outline: 2px solid green;
-  background: blue;
-} */
