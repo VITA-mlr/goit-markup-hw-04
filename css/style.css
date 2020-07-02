@@ -152,7 +152,6 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 94px;
-  /* outline: 2px solid tomato; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -179,10 +178,33 @@ p {
   color: var(--header-menu-color);
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--menu-active-color);
+  fill: var(--menu-active-color);
+}
+
+.nav-link.current {
+  color: var(--menu-active-color);
+}
+
+.line {
+  position: relative;
+}
+
+.line-link {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--menu-active-color);
+}
+
 .nav-list-site .nav-link {
   display: block;
-  /* padding-top: 33px;
-  padding-bottom: 31px; */
+  padding-top: 33px;
+  padding-bottom: 31px;
 }
 
 .nav-list-site li:not(:last-child) {
@@ -238,17 +260,6 @@ p {
   height: 15px;
   background-image: url(../images/smartphone.svg);
 } */
-
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--menu-active-color);
-  fill: var(--menu-active-color);
-}
-
-.nav-link.current {
-  color: var(--hero-button-color);
-  background-color: var(--menu-active-color);
-}
 
 /* 
       Navigation in footer
@@ -452,8 +463,17 @@ p {
   max-width: 370px;
 }
 
+.we_make-item {
+  position: relative;
+}
+
 .we_make-signature {
-  background-color: var(--text-color);
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  padding: 27px 0;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .we_make-header {
@@ -640,12 +660,30 @@ p {
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
+.position {
+  position: relative;
+}
+
 .text {
+  position: absolute;
+  top: 0;
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  height: 100%;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
   color: var(--hero-button-color);
   background: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+}
+
+.text:hover,
+.text:focus {
+  opacity: 1;
 }
 
 .portfolio-item-header {
