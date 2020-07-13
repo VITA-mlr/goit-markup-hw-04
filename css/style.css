@@ -1,14 +1,10 @@
 /* 
 studio - 000000
 web - 2196F3 - адрес.активньій 
-
 меню, фільтри, заголовок - 212121
 меню.активньій - 2196F3
-
 адрес,текст - 757575
-
 герой, кнопка, фон - FFFFFF
-
 футер-адрес, E-mail - rgba(255, 255, 255, 0.6);
 разработка - rgba(255, 255, 255, 0.4);
 */
@@ -249,18 +245,15 @@ p {
 /* .icon-address::before {
   content: "";
   background-repeat: no-repeat;
-
   display: inline-flex;
   background-position: 0 center;
   margin-right: 10px;
 }
-
 .icon-address:nth-child(1)::before {
   width: 16px;
   height: 12px;
   background-image: url(../images/envelope.svg);
 }
-
 .icon-address:nth-child(2)::before {
   width: 10px;
   height: 15px;
@@ -318,6 +311,12 @@ p {
 .form {
   align-items: flex-end;
   margin-left: auto;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 .developed {
@@ -409,15 +408,12 @@ p {
 .icon-features:nth-child(1)::before {
   background-image: url(../images/sprite.svg#icon-clock_1);
 }
-
 .icon-features:nth-child(2)::before {
   background-image: url(../images/clock_1.svg);
 }
-
 .icon-features:nth-child(3)::before {
   background-image: url(../images/diagram_1.svg);
 }
-
 .icon-features:nth-child(4)::before {
   background-image: url(../images/astronaut_1.svg);
 } */
@@ -576,7 +572,7 @@ p {
 .customers-block {
   width: 170px;
   height: 90px;
-  border: 2px solid #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 
   display: flex;

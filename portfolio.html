@@ -330,13 +330,16 @@
               <input type="email" name="user-email" placeholder="E-mail" />
               <!-- <input type="submit" value="Подписаться" /> -->
 
-              <a class="button" href="">
+              <a
+                type="submit"
+                class="button"
+                href=""
+                aria-lable="Кнопка подписатся"
+              >
                 Подписаться
-                <img
-                  src="images/icon_send.svg"
-                  alt="Иконка стрелки"
-                  width="24"
-                />
+                <svg class="icon-send">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
               </a>
             </form>
           </div>
